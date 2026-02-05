@@ -1,0 +1,80 @@
+QWidget {
+    background-color: #1f2419;
+    color: #d8ddd4;
+    font-size: 18px;
+}
+QCheckBox {
+    padding: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 1px;
+    padding 6px;
+}
+QCheckBox::indicator:checked {
+    background-color: #7a8c6f;
+    border: 1px solid #626f56;
+    border-radius: 6px;
+}
+QCheckBox::indicator:unchecked {
+    background-color: #353a2f;
+    border: 1px solid #4a5041;
+    border-radius: 2px;
+}
+QPushButton {
+    border: solid 2px #626f56;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #2a2f25;
+    padding: 6px 10px;
+}
+QPushButton#cancel_button:hover {
+    background-color: #a86b6b;
+}
+QPushButton#cancel_button:pressed {
+    background-color: #8f5555;
+}
+QPushButton:hover {
+    background-color: #3f4538;
+}
+QPushButton:pressed {
+    background-color: #353a2f;
+}
+QLineEdit, QDateTimeEdit {
+    background-color: #2a2f25;
+    color: #d8ddd4;
+    border: 1px solid #4a5041;
+    border-radius: 8px;
+    padding: 6px;
+}
+QListWidget {
+    background-color: #2a2f25;
+    border-radius: 10px;
+    border: none;
+}
+QLabel {
+    font-weight: bold;
+}
+QScrollBar:vertical {
+    background: #2a2f25;
+    width: 12px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #4a5041;
+    border-radius: 6px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #7a8c6f;
+}
+task_past_deadline {
+    color: #ffd4d4;
+}
+
+
+QPushButton#Quit_button:hover {
+    background-color: #F58282;
+}
+
+QPushButton#Quit_button:pressed {
+    background-color: #F54C4C;
+}

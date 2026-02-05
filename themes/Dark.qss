@@ -1,0 +1,99 @@
+
+    QWidget {
+        background-color: #202020;
+        color: #dddddd;
+        font-size: 18px;
+    }
+
+    QCheckBox {
+        padding: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 1px;
+        padding 6px;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #4caf50;
+        border: 1px solid #3e8e41;
+        border-radius: 6px;
+    }
+
+    QCheckBox::indicator:unchecked {
+        background-color: #555;
+        border: 1px solid #777;
+        border-radius: 2px;
+    }
+
+    QPushButton {
+        border: solid 2px #3e8e41;
+        border-radius: 8px;
+        font-weight: bold;
+        background-color: #2a2a2a;
+        padding: 6px 10px;
+
+    }
+
+    QPushButton#Quit_button:hover {
+        background-color: #F58282;
+    }
+
+    QPushButton#Quit_button:pressed {
+        background-color: #F54C4C;
+    }
+
+
+    QPushButton#cancel_button:hover {
+        background-color: #F58282;
+    }
+
+    QPushButton#cancel_button:pressed {
+        background-color: #F54C4C;
+    }
+
+
+    QPushButton:hover {
+        background-color: #2f4f2f;
+    }
+
+    QPushButton:pressed {
+        background-color: #1f3f1f;
+    }
+
+    QLineEdit, QDateTimeEdit {
+        background-color: #2a2a2a;
+        color: #dddddd;
+        border: 1px solid #555;
+        border-radius: 8px;
+        padding: 6px;
+    }
+
+
+
+    QListWidget {
+        background-color: #2a2a2a;
+        border-radius: 10px;
+    }
+
+    QLabel {
+        font-weight: bold;
+    }
+
+    QScrollBar:vertical {
+        background: #2a2a2a;
+        width: 12px;
+        margin: 0px;
+    }
+
+    QScrollBar::handle:vertical {
+        background: #555;
+        border-radius: 6px;
+    }
+
+    QScrollBar::handle:vertical:hover {
+        background: #777;
+    }
+
+    task_past_deadline {
+        color: #FFD4D4;
+    }

@@ -28,6 +28,7 @@ from PySide6.QtWidgets import (
 version_control = "2.01"  # first layout creation
 version_control = "2.31"  # connected Duckdb, and deadline list
 version_control = "2.47"  # main functionality done, themes and admin panel started
+version_control = "2.51"  # admin panel functionality done, themes added
 
 
 class mainwin(QMainWindow):

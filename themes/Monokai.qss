@@ -66,9 +66,11 @@ QScrollBar::handle:vertical {
 QScrollBar::handle:vertical:hover {
     background: #ae81ff;
 }
-task_past_deadline {
-    color: #fd971f;
-}
+#upcoming_task { color: #A6E22E88; } /* softer green */
+#exam_task { color: #F92672; font-weight: bold; }
+#task_past_deadline { color: #E6DB74; text-decoration: underline; }
+#task_past_deadline_done { color: #75715E; text-decoration: line-through; }
+
 QPushButton#Quit_button:hover {
     background-color: #F58282;
 }

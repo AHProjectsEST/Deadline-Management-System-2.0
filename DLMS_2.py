@@ -209,20 +209,21 @@ class mainwin(QMainWindow):
             diff_date = date - date_now
             days = diff_date.days
 
-            """if days >= 0 and days <= 1:
+            name_lower = name.lower()
+
+            # Exams (exa / eksa) always get special styling if still ahead
+            if ("exa" in name_lower or "eksa" in name_lower) and days > 0:
+                checkbox.setObjectName("exam_task")
+
+            # Upcoming tasks (0–2 days) but NOT exams
+            elif 0 <= days < 3:
+                checkbox.setObjectName("upcoming_task")
+
+            # Past deadline
+            if days < 0 and not done_stat:
                 checkbox.setObjectName("task_past_deadline")
-
-            if 0 <= days <= 1 and ("exa" in name.lower() or "eksa" in name.lower()):
-                checkbox.setStyleSheet("color: red;")
-
-                checkbox.setStyleSheet("color: red;")
-            elif "exa" in name.lower() or "eksa" in name.lower() and days > 1:
-                checkbox.setStyleSheet("color: #FF8787;")
-
-            if days < 0 and done_stat == False:
-                checkbox.setStyleSheet("color: #9EC8FF;")
             elif days < 0:
-                checkbox.setStyleSheet("color: #ADF0FF;")"""
+                checkbox.setObjectName("task_past_deadline_done")
 
             item = QListWidgetItem(self.list_widget)
             # item.setSizeHint(QSize(item.sizeHint().width(), 40))

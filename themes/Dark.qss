@@ -94,6 +94,7 @@
         background: #777;
     }
 
-    task_past_deadline {
-        color: #FFD4D4;
-    }
+    #upcoming_task { color: #FFDDB8; }
+    #exam_task { color: #FF4444; font-weight: bold; }
+    #task_past_deadline { color: #FFDD55; text-decoration: underline; }
+    #task_past_deadline_done { color: #777777; text-decoration: line-through; }
